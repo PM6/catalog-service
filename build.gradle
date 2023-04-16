@@ -26,6 +26,10 @@ dependencies {
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 }
 
+bootRun {
+    systemProperty 'spring.profiles.active', 'testdata'
+}
+
 tasks.named('test') {
     useJUnitPlatform()
 }
