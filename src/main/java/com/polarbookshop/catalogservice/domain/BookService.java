@@ -37,10 +37,12 @@ public class BookService {
             existingBook -> {
               var bookToUpdate =
                   new Book(
+                      existingBook.id(),
                       existingBook.isbn(),
                       existingBook.title(),
                       existingBook.author(),
-                      existingBook.price());
+                      existingBook.price(),
+                      existingBook.version());
               return bookRepository.save(bookToUpdate);
             })
         .orElseGet(() -> addBookToCatalog(book));
