@@ -42,6 +42,8 @@ public class BookService {
                       existingBook.title(),
                       existingBook.author(),
                       existingBook.price(),
+                      existingBook.createdDate(),
+                      existingBook.lastModifiedDate(),
                       existingBook.version());
               return bookRepository.save(bookToUpdate);
             })
