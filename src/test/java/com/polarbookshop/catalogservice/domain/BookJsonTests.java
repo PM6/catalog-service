@@ -34,6 +34,7 @@ class BookJsonTests {
         "title": "Title",
         "author": "Author",
         "price": 9.90,
+        "publisher": "Polarsophia",
         "version": 0
       }
 """;
