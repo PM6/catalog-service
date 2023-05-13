@@ -71,6 +71,10 @@ bootBuildImage {
     }
 }
 
+springBoot {
+    buildInfo()
+}
+
 tasks.named('test') {
     useJUnitPlatform()
 }
